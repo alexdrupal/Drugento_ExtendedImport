@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <DruGento_ExtendedImport>
+            <version>0.1.0</version>
+        </DruGento_ExtendedImport>
+    </modules>
+    <global>
+        <blocks>
+            <drugento_extended_import>
+                <class>DruGento_ExtendedImport_Block</class>
+            </drugento_extended_import>
+        </blocks>
+        <helpers>
+            <drugento_extended_import>
+                <class>DruGento_ExtendedImport_Helper</class>
+            </drugento_extended_import>
+        </helpers>
+        <models>
+            <drugento_extended_import>
+                <class>DruGento_ExtendedImport_Model</class>
+            </drugento_extended_import>
+        </models>
+        <importexport module="importexport">
+            <import_entities>
+                <catalog_product translate="label">
+                    <model_token>drugento_extended_import/import_entity_product</model_token>
+                </catalog_product>
+            </import_entities>
+        </importexport>
+    </global>
+    <adminhtml>
+        <layout>
+            <updates>
+                <drugento_extended_import>
+                    <file>drugento_extended_import.xml</file>
+                </drugento_extended_import>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * DruGento_ExtendedImport extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       DruGento
+ * @package        DruGento_ExtendedImport
+ * @copyright      Copyright (c) 2015
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<config>
+    <modules>
+        <DruGento_ExtendedImport>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_ImportExport />
+            </depends>
+        </DruGento_ExtendedImport>
+    </modules>
+</config>
