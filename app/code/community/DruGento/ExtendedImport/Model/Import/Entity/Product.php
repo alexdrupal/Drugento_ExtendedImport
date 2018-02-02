@@ -222,9 +222,7 @@ class DruGento_ExtendedImport_Model_Import_Entity_Product extends Mage_ImportExp
 
         $fileName = Varien_File_Uploader::getNewFileName($this->_addDirSeparator($destinationFile) . $fileName);
         $destinationFile = $this->_addDirSeparator($destinationFile);
-            Mage::log('Destination  before'. $destinationFile . $fileName, null, 'drugento_import.log');
         if (!file_exists($destinationFile . $fileName)) {
-            Mage::log('Destination '. $destinationFile . $fileName, null, 'drugento_import.log');
             $image = file_get_contents($url);
             file_put_contents($destinationFile.$fileName, $image);
         }
